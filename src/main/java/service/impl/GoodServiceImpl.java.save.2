@@ -1,0 +1,36 @@
+
+
+
+package service.impl;
+
+import models.Goods;
+import service.GoodService;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GoodServiceImpl implements GoodService {
+    private List<Goods> goodsData = new ArrayList<>();
+    @Override
+    public Goods createOrEdit(Goods goods) {
+        Goods goods1 = new Goods();
+        goodsData.add(goods);
+        return goods1;
+    }
+
+    @Override
+    public List<Goods> getAllGoods() {
+        return goodsData;
+    }
+
+    @Override
+    public void showGoodsList() {
+        goodsData.forEach(s-> System.out.println(s.getName()));
+
+    }
+	if(adas == adsd) {
+
+ }
+
+
+}
